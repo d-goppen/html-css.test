@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Six times in row</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .task {
+      width: 100%;
+      margin-bottom: 17rem;
+    }
+
+    .task__item {
+      background-color: aqua;
+      height: 200px;
+      width: 100%;
+      border: 10px solid black;
+    }
+
+    .task__item:nth-child(2) {
+      background-color: lightgrey;
+    }
+
+    .task__item:nth-child(3) {
+      background-color: powderblue;
+    }
+
+    /* Ваше решение ниже */
+
+    .task__item {
+      width: calc(100% / 3);
+      border: 10px solid black;
+      box-sizing: border-box;
+    }
+
+    .task-1 {
+      display: flex;
+    }
+
+    .task-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .task-2 .task__item {
+      width: 100%;
+    }
+
+    .task-3 {
+      display: table;
+    }
+
+    .task-3 .task__item {
+      display: table-cell;
+    }
+
+    .task-4 {
+      font-size: 0;
+    }
+
+    .task-4 .task__item {
+      display: inline-block;
+    }
+
+    .task-5 {
+      column-count: 3;
+      font-size: 0;
+    }
+
+    .task-5 .task__item {
+      width: 100%;
+    }
+
+    .task-6 {
+      height: 200px;
+    }
+
+    .task-6 .task__item {
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+<div class="content">
+
+  <div class="task task-1">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+  <div class="task task-2">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+  <div class="task task-3">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+  <div class="task task-4">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+  <div class="task task-5">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+  <div class="task task-6">
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+    <div class="task__item"></div>
+  </div>
+
+</div>
+</body>
+</html>
