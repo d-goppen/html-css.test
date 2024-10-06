@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star rating</title>
+  <style>
+    .rating {
+      padding: 8px;
+      border: 1px solid darkgray;
+      display: inline-flex;
+      flex-direction: row-reverse;
+    }
+
+    .rating input[type="radio"] {
+      display: none;
+    }
+
+    .rating label {
+      font-size: 32px;
+      color: lightgray;
+    }
+
+    .rating input:checked ~ label {
+      text-shadow: darkblue 0 0 1px;
+      color: yellow;
+    }
+
+    .rating label:hover,
+    .rating input:checked ~ label:hover {
+      text-shadow: darkblue 0 0 3px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="rating">
+    <input type="radio" name="rating" id="rating-5">
+    <label for="rating-5">&#9733</label>
+    <input type="radio" name="rating" id="rating-4">
+    <label for="rating-4">&#9733</label>
+    <input type="radio" name="rating" id="rating-3">
+    <label for="rating-3">&#9733</label>
+    <input type="radio" name="rating" id="rating-2">
+    <label for="rating-2">&#9733</label>
+    <input type="radio" name="rating" id="rating-1">
+    <label for="rating-1">&#9733</label>
+  </div>
+</body>
+</html>
