@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese flag</title>
+  <style>
+    .japanese-flag {
+      position: relative;
+      background-color: white;
+      border: 1px solid black;
+      width: 48vw;
+      aspect-ratio: 3/2;
+      margin: auto;
+    }
+
+    .japanese-flag:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-color: red;
+      border-radius: 50%;
+      height: 60%;
+      aspect-ratio: 1/1;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="japanese-flag"></div>
+</body>
+</html>
